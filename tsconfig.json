@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "types": ["node"],
+        // "allowJs": true,
+        "incremental": true,
+        "target": "ES2020",
+        "module": "ES2020",
+        "declaration": true,
+        "outDir": "dist",
+        "rootDir": "./",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "*",
+                "dist/*"
+            ]
+        },
+        "strict": false,
+        "noImplicitAny": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020
+    },
+    "include": [
+        "lib/**/*.ts",
+        "script/**/*.ts",
+        "*.ts", "index.ts", "test/test.spec.ts", "test/test-1.spec.ts",
+    ],
+    "exclude": [
+        "node_modules/**",
+        "tmp/**/*.ts",
+    ],
+}
